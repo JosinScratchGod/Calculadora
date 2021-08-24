@@ -1,0 +1,98 @@
+	<style>
+		body {
+		background-image: url("cal.jpg");
+		}
+		input[type=button]{
+		border-radius: 1px;
+		background:#a6a6a6;
+		font-size:20px;
+		font-family: arial;
+		border: none;
+		width:75px;
+		height:75px;
+		color: black;
+		margin-right:0px;
+		margin-bottom:4px;
+		cursor:pointer;
+		outline:none;
+		}
+		input[type=button].orang{
+		background:#e6b800;
+		color: white;
+		}
+		input[type=button].del{
+		background:#808080;
+		color: white;
+		}
+		input[type=text] {
+	    outline:none;
+		text-align:right;
+		background:white;
+		width:300px;
+		height:75px;
+		border: none;
+		color: black;
+		font-size: 35px;
+		line-height: 3px;
+		letter-spacing: 0.6px;
+		word-spacing: 1.2px;
+		}
+		h2{
+		font-size: 20px;
+		color: black;
+		font-family: arial;
+		line-height: -10px;
+		}
+		table {
+		background: white;
+		border-radius: 5px;
+		}
+		h1 {
+			font-family: Arial, Helvetica, sans-serif;
+			padding-top: 6px;
+		}
+		
+	</style>
+	<center>
+	<br><br><br>
+	 <form name="calc">
+	<table border="2" height="225" width="350" bgcolor="">  
+       <tr>
+	   <td align="center">
+	   <h1> Calculadora </h1>
+		<input type="text" name="input" size="30" readonly>
+       <br>
+	   <input type="button" name="limpar" value=" C " onclick="calc.input.value =''" class="del">
+		<input type="button" name="zero" value=" 0 " onclick="calc.input.value +='0'" class="del">
+		
+	<input type="button" name="divisao" value=" / " onclick="calc.input.value +='/'" class="del">	
+		<input type="button" name="multiplicacao" value=" X " onclick="calc.input.value +='*'" class="orang">
+		<br>
+		
+	<input type="button" name="nove" value=" 9 " onclick="calc.input.value +='9'">
+		<input type="button" name="oito" value=" 8 " onclick="calc.input.value +='8'">
+		<input type="button" name="sete" value=" 7 " onclick="calc.input.value +='7'">	
+		<input type="button" name="menos" class="orang" value=" - " onclick="calc.input.value +='-'" class="orang">
+			<br>
+			
+			<input type="button" name="quatro" value=" 4 "  onclick="calc.input.value +='4'">
+	<input type="button" name="cinco" value=" 5 " onclick="calc.input.value +='5'">
+	<input type="button" name="seis" value=" 6 " onclick="calc.input.value +='6'">
+	<input type="button" name="adicao" class="orang" value=" + " onclick="calc.input.value +='+'" >	
+	<br>
+	<input type="button" name="um" value=" 1 " onclick="calc.input.value +='1'">
+	<input type="button" name="dois" value=" 2 " onclick="calc.input.value +='2'">
+	<input type="button" name="tres" value=" 3 " onclick="calc.input.value +='3'">
+	<input type="button" name="resultado" value=" = " onclick=" calc.input.value=eval(calc.input.value)" class="orang">
+		<br>
+		<br>
+
+		  </td>
+		  </tr>
+		</table>
+		</form>
+		</center>
+		</html>
+	
+		
+		
